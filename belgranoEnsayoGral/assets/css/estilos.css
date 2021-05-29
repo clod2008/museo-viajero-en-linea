@@ -1,0 +1,208 @@
+body{
+	margin:  0px !important;
+}
+
+:root {
+	margin:  0px !important;
+}
+
+#cross{
+	text-align: center;
+	width:30px;
+	height:30px;
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+	border: 1px solid white;
+}
+#buttons{
+	width:30%;
+	float: right;
+}
+
+header {
+	background-color: rgb(221, 221, 221);
+	padding-top: 1em;
+	/* margin: 0px !important; */
+	/* margin-top: -1em; */
+
+}
+
+
+.top {
+	background-color: rgb(221, 221, 221);
+
+}
+
+#contenidoPpal {
+	/* min-height: 600px; */
+}
+
+footer {
+	background-color: rgb(221, 221, 221);
+	min-height: 6em;
+	clear: both;
+}
+
+.top  img {
+
+	width: 100% !important;
+	padding: 0px !important;
+	margin: 0px !important;
+	-webkit-box-shadow: 0px 3px 15px 9px rgba(0,0,0,0.31); 
+	box-shadow: 0px 3px 15px 9px rgba(0,0,0,0.31);
+	/* margin-top: 1em;
+	margin-bottom: 1em; */
+
+}
+
+tr{
+	margin: 0;
+	padding: 0;
+	border-collapse: collapse;
+}
+td{
+	height: 30px;
+	width: 30px;
+}
+.tdCorrectas{
+	background-color: lightgreen !important;
+	color: green;
+	
+}
+
+.tdInCorrectas {
+	background-color: orange;
+	color: orangered;
+}
+#leftBox{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	/* float: left; */
+	background-color: darkgrey !important;
+}
+#rightBox{
+	/* float: left;
+	clear:left; */
+	margin-top: 2em !important;
+
+	min-width: 470px;
+}
+/* .butt{
+	
+	height:50px;
+	width: 107px;
+} */
+#puzzel{
+	text-align: center;
+	margin: auto;
+	padding: 0;
+	border-collapse: collapse;
+	border: 1px solid black;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+.inputBox{
+		width: 40px;
+		height:40px;
+		border: 1px solid black;
+		text-align: center;
+}
+#hintsTable{
+	/* margin: auto; */
+	width: 100%;
+	text-align: left;
+	margin-bottom: 2em;
+	
+
+	/* float: left;
+	clear: left; */
+
+}
+
+.inputBox{
+	/* background-color: aqua; */
+	font-weight: bold;
+	/* text-transform: uppercase; */
+}
+
+.test {
+	background-color: cadetblue;
+}
+
+@media print {
+	.tdCorrectas{
+		background-color: green !important;
+		
+	}
+
+	
+	.oculto-impresion, .oculto-impresion *{
+		display: none !important;
+	}
+	
+}
+
+.pdfDocs {
+	width: 100%;
+	height: 100vh;
+}
+
+footer{
+	/* background-color: #3F729B; */
+	color: var(--light);
+	background-color: var(--gray);
+
+}
+
+.footer-copyright{
+	background-color: #21586b;
+}
+
+
+.page-footer a {
+	color: var(--light);
+	
+	
+}
+
+:root {
+	--blue: #007bff;
+	--indigo: #6610f2;
+	--purple: #6f42c1;
+	--pink: #e83e8c;
+	--red: #dc3545;
+	--orange: #fd7e14;
+	--yellow: #ffc107;
+	--green: #28a745;
+	--teal: #20c997;
+	--cyan: #17a2b8;
+	--white: #fff;
+	--gray: #6c757d;
+	--gray-dark: #343a40;
+	--primary: #007bff;
+	--secondary: #6c757d;
+	--success: #28a745;
+	--info: #17a2b8;
+	--warning: #ffc107;
+	--danger: #dc3545;
+	--light: #f8f9fa;
+	--dark: #343a40;
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+	--font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	--font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  };
+
+#logoFooter{
+	background-color: greenyellow !important;
+}
+
+.cls-1{fill:red !important;}
+
+#tablaCont{ 
+	margin-bottom: 2em;
+}

@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Crucigrama</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		      <!-- meta para no cache -->
+			  <meta http-equiv="Expires" content="0">
+			  <meta http-equiv="Last-Modified" content="0">
+			  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+			  <meta http-equiv="Pragma" content="no-cache">
+		<!--Open Graph-->
+		<meta property="og:title" content="OriginariaMente Argentina :: CRUCIGRAMA">
+		<meta property="og:site_name" content="El Museo Viajero en línea">
+		<meta property="og:url" content="https://museoviajero.apsis.com.ar/">
+		<meta property="og:description" content="La Tierra Argentina desde los primeros pobladores. El arte y la vida cotidiana de los Guaraníes, Tobas, Diaguitas, Onas, Querandíes y Yámanas son algunos de los pueblos presentados.">
+		<meta property="og:type" content="article">
+		<meta property="og:image" content="hhttps://museoviajero.apsis.com.ar/actividades/originariamente/assets/img/logoMuseoOG.jpg">
+		<!--Awesom Fonts-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+		
+		<link rel="stylesheet" href="./assets/css/estilos.css">
+		<link rel="stylesheet" href="./assets/css/mediaPrnt.css">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="./assets/js/jspdf.min.js"></script>
+		<script src="./assets/js/html2canvas.min.js"></script>
+	</head>
+<body onload="initializeScreen()">
+<header>
+	<div id="headerMuseo"></div>
+</header>
+<section id="bifurcador">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="container"><h1>Actividades</h1></div>
+			<div id="contenidoBifurcador" class="card-deck"></div>
+        </div>
+    </div>
+</section>
+	
+<div id="contenidoPpal" class="container-fluid text-center">
+
+	<div id="tablaCont" class="	col-xl-8
+								col-lg-8
+								float-left table-responsive" 
+								style="margin-bottom: 2em;">
+			<table id="puzzel">
+			</table>
+			<div id="rightBox" class="container text-center float-none oculto-impresion">
+				<button id="clear" type="button" class="btn btn-primary">Borrar</button>
+				<button id="check" type="button" class="btn btn-primary">Revisar</button>
+				<!-- <button id="solve" type="button" class="btn btn-primary">Solucion</button> -->
+				<button id="clue" type="button" class="btn btn-primary">Pista</button>
+				<button id="btnPprint" type="button" class="btn btn-primary">Imprimir</button>
+			
+			</div>
+
+		</div>
+		<div class="col-4 float-left ">
+			<table id="hintsTable">
+					<tr><td><strong>
+							Referencias:
+						</strong>
+				
+
+
+					<tr><td>1 Nombre de las sandalias utilizadas por los diaguitas.</td></tr>
+					<tr><td>2 ¿Qué utilizaban los guaraníes como si fuera una moneda?</td></tr>
+					<tr><td>3 Nombre en guaraní que recibe el recipiente del mate</td></tr>
+					<tr><td>4 ¿Con qué melodía se llaman entre los cerros los chicos y chicas que descienden de los diaguitas, cuando van a la escuela?</td></tr>
+					<tr><td>5 ¿Qué planta alta sembraban los guaraníes primero para darle sombra a las batatas y las mandiocas, y para que se enreden los porotos?</td></tr>
+					<tr><td>6 ¿Qué elemento muy utilizado por los yámanas era llamado por ellos “Anán”?</td></tr>
+					<tr><td>7 ¿Cuál era el animal que los querandíes preferían cazar?</td></tr>
+					<tr><td>8 ¿Quién baja del cielo, en la leyenda Toba, y le regala al chico triste un violín de una cuerda llamado Nuybiqué?</td></tr>	
+					<tr><td>9 Entre los diaguitas el ñandú representa la Tierra; el sapo, el agua; la serpiente, el fuego; y el cóndor ¿Qué representa?</td></tr>	
+					<tr><td>10 Insecto que los querandíes gustaban de comer cocido y machacado como si fuera una mayonesa</td></tr>	
+					<tr><td>11 Pueblo del sur que solía hacer fogatas para avisarle a sus vecinos, los Yámanas, que había comida para todos porque había encallado una ballena en la playa.</td></tr>
+					
+			</table>
+		</div>
+
+	</div>
+</div>
+
+<!--			
+	<tr><td>1 Nombre de las sandalias utilizadas por los diaguitas.</td></tr>
+	<tr><td>2 ¿Qué utilizaban los guaraníes como si fuera una moneda?</td></tr>
+	<tr><td>3 Nombre en guaraní que recibe el recipiente del mate</td></tr>
+	<tr><td>4 ¿Con qué melodía se llaman entre los cerros los chicos y chicas que descienden de los diaguitas, cuando van a la escuela?</td></tr>
+	<tr><td>5 ¿Qué planta alta sembraban los guaraníes primero para darle sombra a las batatas y las mandiocas, y para que se enreden los porotos?</td></tr>
+	<tr><td>6 ¿Qué elemento muy utilizado por los yámanas era llamado por ellos “Anán”?</td></tr>
+	<tr><td>7 ¿Cuál era el animal que los querandíes preferían cazar?</td></tr>
+	<tr><td>8 ¿Quién baja del cielo, en la leyenda Toba, y le regala al chico triste un violín de una cuerda llamado Nuybiqué?</td></tr>	
+	<tr><td>9 Entre los diaguitas el ñandú representa la Tierra; el sapo, el agua; la serpiente, el fuego; y el cóndor ¿Qué representa?</td></tr>	
+	<tr><td>10 Insecto que los querandíes gustaban de comer cocido y machacado como si fuera una mayonesa</td></tr>	
+	<tr><td>11 Pueblo del sur que solía hacer fogatas para avisarle a sus vecinos, los Yámanas, que había comida para todos porque había encallado una ballena en la playa.</td></tr>
+-->
+
+
+<footer id="pieDePagina" class="page-footer font-small blue pt-4 mt-4"></footer>
+
+
+	<!-- Optional JavaScript -->
+	<script src="./assets/js/script.js"></script>
+	<script src="./assets/js/bifurcador.js"></script>
+	<script src="./assets/js/footer.js"></script>
+	<script src="./assets/js/heather.js"></script>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+
+	
+
+  </body>
+</html>
+

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<title>Crucigrama</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		      <!-- meta para no cache -->
+			  <meta http-equiv="Expires" content="0">
+			  <meta http-equiv="Last-Modified" content="0">
+			  <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+			  <meta http-equiv="Pragma" content="no-cache">
+		<!--Open Graph-->
+		<meta property="og:title" content="OriginariaMente Argentina :: CRUCIGRAMA">
+		<meta property="og:site_name" content="El Museo Viajero en línea">
+		<meta property="og:url" content="https://museoviajero.apsis.com.ar/">
+		<meta property="og:description" content="La Tierra Argentina desde los primeros pobladores. El arte y la vida cotidiana de los Guaraníes, Tobas, Diaguitas, Onas, Querandíes y Yámanas son algunos de los pueblos presentados.">
+		<meta property="og:type" content="article">
+		<meta property="og:image" content="hhttps://museoviajero.apsis.com.ar/actividades/originariamente/assets/img/logoMuseoOG.jpg">
+
+		<!-- AwesomFont-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="./assets/css/estilos.css">
+		<link rel="stylesheet" href="./assets/css/mediaPrnt.css">
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<script src="./assets/js/jspdf.min.js"></script>
+		<script src="./assets/js/html2canvas.min.js"></script>
+	</head>
+<body onload="initializeScreen()">
+<header>
+	<div id="headerMuseo"></div>
+</header>
+<section id="bifurcador">
+    <div class="container">
+        <div class="row mt-4">
+            <div class="container"><h1>Actividades</h1></div>
+			<div id="deck1" class="card-deck mt-3"></div>
+			<div id="deck2" class="card-deck mt-3"></div>
+        </div>
+    </div>
+</section>
+	
+<div id="contenidoPpal" class="container-fluid text-center">
+
+	<div id="leftBox" class="container-fluid text-cente">
+		<div id="tablaCont" class="	col-xl-8
+									col-lg-8
+									float-left table-responsive">
+			<table id="puzzel">
+			</table>
+			<div id="rightBox" class="container text-center float-none oculto-impresion">
+				<button id="clear" type="button" class="btn btn-primary">Borrar</button>
+				<button id="check" type="button" class="btn btn-primary">Revisar</button>
+				<!-- <button id="solve" type="button" class="btn btn-primary">Solucion</button> -->
+				<button id="clue" type="button" class="btn btn-primary">Pista</button>
+				<button id="btnPprint" type="button" class="btn btn-primary">Imprimir</button>
+			</div>
+		</div>
+		<div class="col-xl-4
+					col-lg-4
+					float-left ">
+			<div class="text-left ">
+				<div><h4><strong>Referencias:</strong></h4></div>
+				<ol>
+					<li>Nombre del café donde Belgrano y los otros revolucionarios se reunían en secreto antes del 25 de Mayo. </li>
+					<li>Ciudad donde se izó por primera vez la bandera argentina un 25 de febrero de 1812.</li>
+					<li>Nación originaria a la que pertenecía Huayna Capac (candidato a rey, propuesto por Belgrano, respaldado por los congresales de Charcas y Potosí, y rechazado por los de Buenos Aires).</li>
+					<li>Gobierno ejercido por tres personas que en 1812 ordenó retirada antes de la batalla de Tucumán.</li>
+					<li>Una de las carreras que estudió Belgrano en España</li>
+					<li>Organismo administrativo creado en 1794 por el Rey de España. Belgrano fue el primero en ocupar el cargo de Secretario.</li>
+					<li>Color que junto con el rojo (que significaba guerra) eligieron los revolucionarios para distinguirse antes del 25 de Mayo. (El color a definir destacaba que querían la paz.)</li>
+					<li>Nombre del distintivo celeste y blanco (similar al utilizado durante las Invasiones Inglesas) que el Triunvirato autoriza a Belgrano para diferenciar sus soldados de los españoles. </li>
+					<li>Apellido del capitán que durante la Batalla de Tucumán (25/9/1812) comunicó a Belgrano la orden de retirada enviada por el Triunvirato desde Buenos Aires. </li>
+					<li>Título que obtuvo Belgrano en España, además del de Licenciado en Economía y Bachiller en Idiomas. </li>
+					<li>Idioma que dominaba Belgrano, además de latín, inglés e italiano.</li>
+					<li>País en el que nació Domingo Cayetano Belgrano Peri, el padre de Belgrano.</li>
+					<li>("General Pío ...") Apellido del comandante del ejército realista vencido por Belgrano en la Batalla de Tucumán.</li>
+					<li>Insectos que durante la Batalla de Tucumán daban la impresión de estar recibiendo balazos.</li>
+				</ol>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+<footer id="pieDePagina" class="page-footer font-small blue pt-4 mt-4"></footer>
+
+
+	<!-- Optional JavaScript -->
+	<script src="./assets/js/crucigrama.js"></script>
+	<script src="./assets/js/bifurcador.js"></script>
+	<script src="./assets/js/footer.js"></script>
+	<script src="./assets/js/heather.js"></script>
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	
+
+	
+
+  </body>
+</html>
+
