@@ -7,8 +7,12 @@ _Proyecto implementado para difundir contenidos educativos_
 * HTML
 * CSS
 
+## Proyecto activo 🚀
+* [Actividades Belgrano](https://museoviajero.apsis.com.ar/actividades/belgranoEnsayoGral/actividadesBelgrano.html)
+* [Actividades Originariamente](https://museoviajero.apsis.com.ar/actividades/originariamente/actividadesOriginariamente.html)
 
-### Libreris y frameworks
+
+### Librerias y frameworks
 * [Bootstrap](https://getbootstrap.com/)
 * [Jquery](https://jquery.com/)
 
